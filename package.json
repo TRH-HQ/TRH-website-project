@@ -1,0 +1,15 @@
+{
+  "name": "trh-website-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/TRH-HQ/TRH-website-project/issues"
+  },
+  "engines": {
+    "npm": "please-use-pnpm-not-npm"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1"
+  }
+}
