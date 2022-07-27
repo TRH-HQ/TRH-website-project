@@ -1,3 +1,192 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+============================
+google font-customization 
+============================
+*/
+
+@layer utilities {
+  .m-serif {
+    font-family: 'Merriweather', serif;
+  }
+
+  .nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* 
+=========================================================
+colour configuration using native tailwind css colours
+=========================================================
+*/
+
+  /* backgrounds */
+
+  .custom-nav-background {
+    @apply bg-gray-100 dark:bg-slate-700;
+  }
+
+  .custom-background {
+    @apply bg-white dark:bg-slate-900;
+  }
+
+  .custom-background_primary-stay {
+    @apply bg-slate-800;
+  }
+
+  .custom-background_secondary {
+    @apply bg-gray-200 dark:bg-gray-100;
+  }
+
+  .custom-background_black {
+    @apply bg-black;
+  }
+
+  .custom-background_card {
+    @apply bg-white dark:bg-slate-800;
+  }
+
+  /* texts */
+
+  .custom-default-text-color {
+    @apply text-slate-800 dark:text-gray-300;
+  }
+
+  .custom-text-color_primary {
+    @apply text-slate-800 dark:text-white;
+  }
+
+  .custom-text-color_secondary {
+    @apply text-gray-700 dark:text-gray-200;
+  }
+
+  .custom-text-color_secondary-stay {
+    @apply text-gray-400;
+  }
+
+  .custom-text-color_primary-stay {
+    @apply text-slate-800;
+  }
+
+  .custom-text-color_white {
+    @apply text-white;
+  }
+
+  /* buttons */
+
+  .custom-btn-colors_no-fill {
+    @apply border-slate-900 dark:border-white bg-white dark:bg-slate-900 hover:dark:text-slate-900 
+    hover:dark:bg-white hover:bg-slate-900 hover:text-white;
+  }
+
+  .custom-btn-colors_fill {
+    @apply bg-slate-800  dark:bg-white text-white dark:text-slate-800;
+  }
+
+  .custom-nav-btn-colors {
+    @apply bg-white text-slate-800 border-gray-600;
+  }
+
+  /* .custom-btn-colors_secondary_fill {
+    @apply border-gray-500  dark:border-gray-200 bg-gray-300 dark:bg-gray-200;
+  } */
+
+  /* borders */
+
+  .custom-border-color_primary {
+    @apply border-slate-800 dark:border-white;
+  }
+
+  .custom-border-color_secondary {
+    @apply border-gray-700 dark:border-gray-500;
+  }
+
+  .custom-border-color_primary_no-fill {
+    @apply border-slate-800 dark:border-white;
+  }
+}
+
+/* 
+=================
+regular styles
+=================
+*/
+
+.podcast-card:nth-child(even) {
+  @apply border-x;
+}
+
+@keyframes fade-effect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fade-effect;
+  animation-duration: 0.75s;
+  animation-timing-funtion: ease;
+}
+
+.post-page .post-text p,
+.about-page .about-text p,
+.permissions-page .permissions-text p,
+.policy-page .policy-text p {
+  @apply mt-4 leading-[32px];
+}
+
+.post-page .post-text h1,
+.about-page .about-text h1,
+.permissions-page .permissions-text h1,
+.policy-page .policy-text h1 {
+  @apply mt-8 text-3xl font-bold montserrat text-gray-800 dark:text-gray-100;
+}
+
+.about-page .about-text h1,
+.permissions-page .permissions-text h1,
+.policy-page .policy-text h1 {
+  @apply text-center;
+}
+
+.main-navbar ul .nav-link,
+.hero-nav ul .nav-link {
+  @apply relative;
+}
+
+.main-navbar ul .nav-link:after {
+  @apply bg-slate-700 dark:bg-gray-200;
+}
+
+.hero-nav ul .nav-link:after {
+  @apply bg-white;
+}
+
+.main-navbar ul .nav-link:after,
+.hero-nav ul .nav-link:after {
+  content: '';
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -17px;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.main-navbar ul .nav-link:hover:after,
+.hero-nav ul .nav-link:hover:after {
+  width: 100%;
+  transition: width 0.975s cubic-bezier(0.19, 1, 0.22, 1);
+}
