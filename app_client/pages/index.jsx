@@ -1,13 +1,6 @@
 import React from 'react';
+import Home from './home-page';
 
-export default function Home() {
-  return <div className="text-blue-600">Hello world</div>;
+export default function index() {
+  return <Home />;
 }
-
-const x = 100;
-
-console.log(x);
-
-const test = (a, b) => {
-  return a + b;
-};
