@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import NavLinks from './NavLinks';
 import { navbarType } from '../contexts/NavbarTypeContext';
+import ReviewsDropdownMenu from './ReviewsDropdown';
 // import ThemeSwitcher from './ThemeSwitcher';
 
 const DynamicThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
@@ -10,8 +11,19 @@ const DynamicThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
 });
 
 function Navbar(isStickyNav) {
+  const [showReviewsDropdown, setShowReviewsDropdown] = useState(false);
+
+  function queryReviewDropdownDisplay() {
+    if (showReviewsDropdown) {
+      setShowReviewsDropdown(false);
+    }
+    if (!showReviewsDropdown) {
+      setShowReviewsDropdown(true);
+    }
+  }
+
   return (
-    <section
+    <nav
       className={`${
         isStickyNav && 'fixed top-0 left-0 right-0'
       } main-navbar w-full py-2 px-8 shadow-md flex custom-nav-background z-30`}
@@ -49,7 +61,10 @@ function Navbar(isStickyNav) {
           </a>
         </Link>
       </aside>
-      <NavLinks />
+      <NavLinks
+        queryReviewDropdownDisplay={queryReviewDropdownDisplay}
+        showReviewsDropdown={showReviewsDropdown}
+      />
       <aside className="right-side flex items-center">
         <div className="search-icon custom-text-color_primary mr-8">
           <svg
@@ -77,7 +92,7 @@ function Navbar(isStickyNav) {
           </svg>
         </button>
       </aside>
-    </section>
+    </nav>
   );
 }
 

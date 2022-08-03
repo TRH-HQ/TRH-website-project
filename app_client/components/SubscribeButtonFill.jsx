@@ -1,12 +1,15 @@
 import React from 'react';
-import CustomButtonNoFill from './CustomButtonNoFill';
+import CustomButtonFill from './CustomButtonFill';
 
-function SubscribeButtonNoFill({ toggleFunction, showMenu }) {
+function SubscribeButtonFill({ toggleFunction, showSubscribeMenu }) {
   return (
-    <CustomButtonNoFill>
-      <div className="flex gap-4 pt-3 pb-2 px-6 justify-center" onClick={toggleFunction}>
-        <span>Subscribe</span>
-        {showMenu ? (
+    <CustomButtonFill>
+      <div
+        className="flex gap-4 py-3 px-2 justify-center items-center uppercase"
+        onClick={toggleFunction}
+      >
+        <span>subscribe | listen</span>
+        {showSubscribeMenu ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -30,8 +33,8 @@ function SubscribeButtonNoFill({ toggleFunction, showMenu }) {
           </svg>
         )}
       </div>
-    </CustomButtonNoFill>
+    </CustomButtonFill>
   );
 }
 
-export default SubscribeButtonNoFill;
+export default SubscribeButtonFill;

@@ -1,12 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import DemoPic from '../../../assets/images/shoe-3.jpg';
-import PostTag from '../../../components/PostTag';
+import DemoPic from '../../assets/images/shoe-3.jpg';
+import PostTag from '../PostTag';
 
 function ArticleCard() {
   return (
-    <Link href="/post-page">
+    <Link href="/posts/article">
       <a>
         <div className="post-card w-3/12">
           <div

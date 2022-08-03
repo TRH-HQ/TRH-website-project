@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import DemoPic from '../assets/images/shoe-3.jpg';
-import PostTag from './PostTag';
+import DemoPic from '../../assets/images/shoe-3.jpg';
+import PostTag from '../PostTag';
 
 function RepostCard() {
   return (
