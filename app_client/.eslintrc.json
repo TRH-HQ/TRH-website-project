@@ -4,21 +4,21 @@
     "es2021": true
   },
   "extends": [
+    "next",
+    "next/core-web-vitals",
     "plugin:react/recommended",
     "airbnb-base",
-    "next",
-    "plugin:prettier/recommended",
     // "next/babel",
-    "next/core-web-vitals"
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": "latest",
+    "ecmaVersion": 13,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
+  "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -28,11 +28,12 @@
       }
     ],
     "no-console": "off",
+    "no-alert": "off",
     "no-unused-vars": "off",
     "@next/next/no-page-custom-font": "off",
     "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
-    "react/prop-type": "off",
+    "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off"
   }
 }
