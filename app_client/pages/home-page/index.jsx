@@ -5,12 +5,12 @@ import NewsLetterSection from '../../components/NewsLetterSection';
 import PodcastsSection from './components/PodcastsSection';
 import RecentPostsSection from './components/RecentPostsSection';
 import ReviewsSection from './components/ReviewsSection';
-import Footer from '../../components/Footer';
+import Footer from '../../components/layout/Footer';
 import SeriesSection from './components/SeriesSection';
 
 function HomePage() {
   return (
-    <main className="min-h-[200px]">
+    <main className="home-page min-h-[200px]">
       {/* <Navbar /> */}
       <Hero />
       <RecentPostsSection />

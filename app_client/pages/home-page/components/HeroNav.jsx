@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import NavLinks from '../../../components/NavLinks';
+import NavLinks from '../../../components/layout/NavLinks';
 // import dynamic from 'next/dynamic';
 // import ThemeSwitcher from './ThemeSwitcher';
 
@@ -10,6 +10,17 @@ import NavLinks from '../../../components/NavLinks';
 function HeroNavbar() {
   // a constant to check for hero section navbar
   const isHeroNav = true;
+
+  const [showReviewsDropdown, setShowReviewsDropdown] = useState(false);
+
+  function queryReviewDropdownDisplay() {
+    if (showReviewsDropdown) {
+      setShowReviewsDropdown(false);
+    }
+    if (!showReviewsDropdown) {
+      setShowReviewsDropdown(true);
+    }
+  }
 
   return (
     <section className="w-full py-2 px-8 flex bg-transparent hero-nav">
@@ -42,7 +53,11 @@ function HeroNavbar() {
           </div>
         </div>
       </aside>
-      <NavLinks isHeroNav={isHeroNav} />
+      <NavLinks
+        isHeroNav={isHeroNav}
+        queryReviewDropdownDisplay={queryReviewDropdownDisplay}
+        showReviewsDropdown={showReviewsDropdown}
+      />
       <aside className="right-side flex items-center">
         <button className="ml-8 menu-button bg-gray-50 border-gray-600 rounded-full p-[8px] w-[34px] h-[34px] border">
           <svg

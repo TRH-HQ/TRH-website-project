@@ -10,7 +10,7 @@ function PolicyPage() {
     <main className="policy-page">
       <Navbar isStickyNav={isStickyNav} />
       <div className="page-header text-5xl pt-[100px] montserrat text-center font-bold">
-        Permissions
+        Privacy Policy
       </div>
       <div className="w-3/5 mx-auto">
         <PermissionsText />

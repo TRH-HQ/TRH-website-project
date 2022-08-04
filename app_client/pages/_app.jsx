@@ -5,7 +5,7 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className="custom-background custom-default-text-color nunito-sans">
+    <main className="custom-background_one custom-default-text-color nunito-sans">
       <Component {...pageProps} />
     </main>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 
 function PostText() {
   return (
-    <section className="post-text w-11/12 m-serif mx-auto custom-text-color_secondary mt-6 text-lg">
+    <section className="post-text w-11/12 m-serif custom-text-color_secondary mt-6 text-[18px]">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa beatae. Sint
         quidem maiores numquam, accusamus nam nostrum provident eius enim distinctio ex, accusantium

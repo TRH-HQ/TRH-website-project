@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleCard from './ArticleCard';
+import ArticleCard from '../../../components/post-type-cards/ArticleCard';
 import SideSectionHeader from '../../../components/SideSectionHeader';
 import LoadMoreBtnSection from '../../../components/LoadMoreBtnSection';
 
