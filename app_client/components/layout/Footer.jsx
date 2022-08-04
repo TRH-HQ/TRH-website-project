@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <section className="p-20 min-h-[200px] flex mt-16 custom-background_secondary">
+    <section className="p-20 min-h-[200px] flex mt-16 custom-background_two">
       <div className="flex w-1/2 flex-col pr-8">
         <div className="brand-details flex items-center">
           <svg

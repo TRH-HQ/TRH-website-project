@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import DemoPic from '../../assets/images/shoe-3.jpg';
-import SubscribeButtonFill from '../SubscribeButtonFill';
+import SubscribeButtonFill from '../buttons/SubscribeButtonFill';
 import PodcastSubscriptionMenu from '../PodcastSubscriptionMenu';
 import PostTag from '../PostTag';
 

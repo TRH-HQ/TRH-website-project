@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ReviewsDropdownMenu from './ReviewsDropdown';
+import ReviewsDropdownMenu from '../ReviewsDropdown';
 
 function NavLinks({ isHeroNav, queryReviewDropdownDisplay, showReviewsDropdown }) {
   return (

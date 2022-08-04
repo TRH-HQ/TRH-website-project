@@ -17,12 +17,18 @@ function NewsLetterSection() {
         />
       </div>
       <div
-        className="overlay-parent relative z-20 w-full min-h-[400px] py-8 shadow-3xl px-20 flex"
-        style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
+        className="overlay-parent custom-newsletter-section-background relative z-20 w-full min-h-[400px] py-8 shadow-3xl px-20 flex"
+        // style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
       >
         <div className="w-1/2">
-          <div className="section-intro montserrat text-5xl font-bold mt-12">
-            Join Our Newsletter
+          <div>
+            <h1 className="section-intro montserrat text-5xl font-bold mt-[4.5rem] mb-3">
+              Join Our Newsletter
+            </h1>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi possimus
+              consequuntur, autem dicta unde!
+            </span>
           </div>
           <form className="form-area w-full flex mt-8">
             <input
@@ -30,11 +36,11 @@ function NewsLetterSection() {
               className="w-9/12 px-6 text-xl pt-[16px] pb-[12px]"
               placeholder="add email here"
             />
-            <button className="w-3/12 custom-btn-colors_fill custom-text_white text-xl pt-1 font-bold">
+            <button className="w-3/12 custom-btn-colors_fill-primary-stay custom-text_white text-xl pt-1 font-bold">
               Submit
             </button>
           </form>
-          <div className="topics-section w-full">
+          {/* <div className="topics-section w-full">
             <h1 className="mt-12 mb-2 montserrat text-lg font-bold">Topics</h1>
             <div className="topics-list flex gap-x-[15px] flex-wrap uppercase text-sm leading-[22px]">
               <span>Faith</span>
@@ -48,12 +54,12 @@ function NewsLetterSection() {
               <span>Discipleship</span>
               <span>Evangelism</span>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div className="w-1/2 py-12 ml-20">
-          <div className="custom-background w-full  py-2 px-6 flex flex-col h-[100%] justify-between">
+        <div className="w-1/2 py-12 ml-[4rem]">
+          <div className="w-full border-l custom-border-color_one py-2 pl-[4rem] pr-6 flex flex-col h-[100%] gap-y-10">
             <div>
-              <h1 className="text-xl montserrat mb-3">Editor's Pick</h1>
+              <h1 className="text-xl montserrat mb-3 mt-6">Editor's Pick</h1>
               <span className="text-3xl montserrat font-bold">
                 Dating: The silly game we love to play
               </span>

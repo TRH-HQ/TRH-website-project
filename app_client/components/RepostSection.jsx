@@ -1,7 +1,7 @@
 import React from 'react';
-import RepostCard from './RepostCard';
-import CenterSectionHeader from './CenterSectionHeader';
-import LoadMoreBtnSection from './LoadMoreBtnSection';
+import RepostCard from './post-type-cards/RepostCard';
+// import CenterSectionHeader from './CenterSectionHeader';
+// import LoadMoreBtnSection from './LoadMoreBtnSection';
 
 function ReviewsSection() {
   return (

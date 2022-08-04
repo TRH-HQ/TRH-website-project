@@ -1,7 +1,7 @@
 import React from 'react';
 import NewsLetterSection from './NewsLetterSection';
 import RepostSection from './RepostSection';
-import Footer from './Footer';
+import Footer from './layout/Footer';
 
 function PageRepeatStack() {
   return (

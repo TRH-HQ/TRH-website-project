@@ -31,28 +31,38 @@ colour configuration using native tailwind css colours
 
   /* backgrounds */
 
-  .custom-nav-background {
-    @apply bg-gray-100 dark:bg-slate-700;
-  }
-
-  .custom-background {
+  .custom-background_one {
     @apply bg-white dark:bg-slate-900;
   }
 
+  .custom-background_two {
+    @apply bg-gray-100 dark:bg-slate-700;
+  }
+
   .custom-background_primary-stay {
-    @apply bg-slate-800;
-  }
-
-  .custom-background_secondary {
-    @apply bg-gray-200 dark:bg-gray-100;
-  }
-
-  .custom-background_black {
-    @apply bg-black;
+    @apply bg-slate-900;
   }
 
   .custom-background_card {
     @apply bg-white dark:bg-slate-800;
+  }
+
+  /* customizing newsletter overlay background */
+
+  .newsletter-overlay-background_light {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .newsletter-overlay-background_dark {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .custom-newsletter-section-background {
+    @apply newsletter-overlay-background_light dark:newsletter-overlay-background_dark;
+  }
+
+  .custom-background_black {
+    @apply bg-black;
   }
 
   /* texts */
@@ -89,11 +99,15 @@ colour configuration using native tailwind css colours
   }
 
   .custom-btn-colors_fill {
-    @apply bg-slate-800  dark:bg-white text-white dark:text-slate-800;
+    @apply bg-slate-900  dark:bg-white text-white dark:text-slate-900;
+  }
+
+  .custom-btn-colors_fill-primary-stay {
+    @apply bg-slate-900 text-white;
   }
 
   .custom-nav-btn-colors {
-    @apply bg-white text-slate-800 border-gray-600;
+    @apply bg-white text-slate-900 border-gray-600;
   }
 
   /* .custom-btn-colors_secondary_fill {
@@ -102,11 +116,11 @@ colour configuration using native tailwind css colours
 
   /* borders */
 
-  .custom-border-color_primary {
+  .custom-border-color_one {
     @apply border-slate-800 dark:border-white;
   }
 
-  .custom-border-color_secondary {
+  .custom-border-color_two {
     @apply border-gray-700 dark:border-gray-500;
   }
 
@@ -140,14 +154,18 @@ regular styles
   animation-timing-funtion: ease;
 }
 
-.post-page .post-text p,
+.article-post .post-text p,
+.book-review-post .post-text p,
+.message-review-post .post-text p,
 .about-page .about-text p,
 .permissions-page .permissions-text p,
 .policy-page .policy-text p {
   @apply mt-4 leading-[32px];
 }
 
-.post-page .post-text h1,
+.article-post .post-text h1,
+.book-review-post .post-text h1,
+.message-review-post .post-text h1,
 .about-page .about-text h1,
 .permissions-page .permissions-text h1,
 .policy-page .policy-text h1 {
@@ -189,4 +207,8 @@ regular styles
 .hero-nav ul .nav-link:hover:after {
   width: 100%;
   transition: width 0.975s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav .reviews:hover .reviews-dropdown {
+  display: flex;
 }

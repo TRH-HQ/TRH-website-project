@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import NavLinks from './NavLinks';
-import { navbarType } from '../contexts/NavbarTypeContext';
-import ReviewsDropdownMenu from './ReviewsDropdown';
+// import { navbarType } from '../../contexts/NavbarTypeContext';
+// import ReviewsDropdownMenu from '../ReviewsDropdown';
 // import ThemeSwitcher from './ThemeSwitcher';
 
-const DynamicThemeSwitcher = dynamic(() => import('./ThemeSwitcher'), {
+const DynamicThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), {
   ssr: false
 });
 
@@ -26,7 +26,7 @@ function Navbar(isStickyNav) {
     <nav
       className={`${
         isStickyNav && 'fixed top-0 left-0 right-0'
-      } main-navbar w-full py-2 px-8 shadow-md flex custom-nav-background z-30`}
+      } main-navbar w-full py-2 px-8 shadow-md flex custom-background_two z-30`}
     >
       <aside className="left-side flex items-center">
         <button className="mr-6 menu-button custom-nav-btn-colors rounded-full p-[7px] w-[40px] h-[40px] border">

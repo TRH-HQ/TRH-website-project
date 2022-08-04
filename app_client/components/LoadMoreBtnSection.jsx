@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import CustomButtonNoFill from './CustomButtonNoFill';
+import CustomButtonNoFill from './buttons/CustomButtonNoFill';
 
 function LoadMoreBtnSection({ link }) {
   return (
