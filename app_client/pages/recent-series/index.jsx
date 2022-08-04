@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/layout/Navbar';
 import PageRepeatStack from '../../components/PageRepeatStack';
 import CenterSectionHeader from '../../components/CenterSectionHeader';
-import SeriesCard from '../../components/SeriesCard';
+import SeriesCard from '../../components/post-type-cards/SeriesCard';
 import LoadMoreBtnSection from '../../components/LoadMoreBtnSection';
 
 function SeriesPage() {
