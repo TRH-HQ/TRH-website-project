@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../../components/Navbar';
+import Navbar from '../../../components/layout/Navbar';
 import PostIntro from './components/PostIntro';
 import PostText from './components/PostText';
 import PostAuthorIntro from './components/PostAuthorIntro';

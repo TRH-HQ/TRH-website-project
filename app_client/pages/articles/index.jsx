@@ -1,7 +1,7 @@
 import React from 'react';
 import LoadMoreBtnSection from '../../components/LoadMoreBtnSection';
 import ArticleCard from '../../components/post-type-cards/ArticleCard';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/layout/Navbar';
 import PageRepeatStack from '../../components/PageRepeatStack';
 import CenterSectionHeader from '../../components/CenterSectionHeader';
 
