@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <section className="p-20 min-h-[200px] flex mt-16 custom-background_two">
-      <div className="flex w-1/2 flex-col pr-8">
-        <div className="brand-details flex items-center">
+    <footer className="px-4 py-8 lg:p-20 min-h-[200px] flex-col flex md:flex mt-16 custom-background_2 text-center">
+      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pr-8">
+        <div className="brand-details flex items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -29,8 +29,8 @@ function Footer() {
             </a>
           </Link>
         </div>
-        <div className="socials mt-4">
-          <ul className="flex gap-6">
+        <div className="socials mt-6 md:mt-4">
+          <ul className="flex gap-6 justify-center">
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex w-1/2 flex-col pl-12">
+      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pl-12 mt-6 md:mt-12">
         <div className="section-intro poppins text-xl">Join Our Newsletter</div>
         <form className="form-area w-full flex mt-2">
           <input
@@ -96,7 +96,7 @@ function Footer() {
           </button>
         </form>
         <div className="footer-links mt-12">
-          <ul className="uppercase montserrat flex gap-6 text-sm">
+          <ul className="uppercase montserrat flex flex-wrap justify-center gap-6 text-sm">
             <Link href="policy-page">
               <a>
                 <li>Privacy policy</li>
@@ -117,7 +117,7 @@ function Footer() {
           Reserved
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
 

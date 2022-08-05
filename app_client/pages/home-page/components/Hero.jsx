@@ -6,8 +6,8 @@ import HeroNavbar from './HeroNav';
 
 function Hero() {
   return (
-    <section className="hero-section h-[600px] w-full relative">
-      <div className="lead-post-banner absolute left-0 right-0 top-0 z-10 w-full h-[600px]">
+    <section className="hero-section h-[620px] w-full relative">
+      <div className="lead-post-banner absolute left-0 right-0 top-0 z-10 w-full h-[620px]">
         <Image
           src={leadPostBanner}
           alt="post-author-pic"
@@ -18,7 +18,7 @@ function Hero() {
         />
       </div>
       <div
-        className="overlay-parent relative z-20 w-full h-[600px] pt-3 shadow-3xl"
+        className="overlay-parent relative z-20 w-full h-[620px] pt-3 shadow-3xl"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
       >
         <HeroNavbar />

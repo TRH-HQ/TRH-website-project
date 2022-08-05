@@ -1,13 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import ReviewsDropdownMenu from '../ReviewsDropdown';
+import ReviewsDropdownMenu from '../ReviewsDropdownMenu';
 
 function NavLinks({ isHeroNav, queryReviewDropdownDisplay, showReviewsDropdown }) {
   return (
     <ul
       className={`${
         isHeroNav && 'text-white'
-      } nav-links flex gap-6 items-center montserrat text-base ml-[200px] mr-auto`}
+      } hidden nav-links xl:flex gap-6 items-center montserrat text-base ml-[200px] mr-auto`}
     >
       <Link href="/">
         <a>
@@ -41,7 +41,7 @@ function NavLinks({ isHeroNav, queryReviewDropdownDisplay, showReviewsDropdown }
               </svg>
             </span>
           </li>
-          <ReviewsDropdownMenu showReviewsDropdown={showReviewsDropdown} />
+          <ReviewsDropdownMenu showReviewsDropdown={showReviewsDropdown} isHeroNav={isHeroNav} />
         </div>
       </div>
       <Link href="/podcasts">
