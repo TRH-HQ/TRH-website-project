@@ -31,21 +31,27 @@ colour configuration using native tailwind css colours
 
   /* backgrounds */
 
-  .custom-background_one {
+  .custom-background_1 {
     @apply bg-white dark:bg-slate-900;
   }
 
-  .custom-background_two {
+  .custom-background_2 {
     @apply bg-gray-100 dark:bg-slate-700;
+  }
+
+  .custom-background_3 {
+    @apply bg-gray-300 dark:bg-gray-100;
+  }
+
+  .custom-background_card {
+    @apply bg-white dark:bg-slate-700;
   }
 
   .custom-background_primary-stay {
     @apply bg-slate-900;
   }
 
-  .custom-background_card {
-    @apply bg-white dark:bg-slate-800;
-  }
+  
 
   /* customizing newsletter overlay background */
 
@@ -150,7 +156,7 @@ regular styles
 
 .fade-in {
   animation-name: fade-effect;
-  animation-duration: 0.75s;
+  animation-duration: 0.55s;
   animation-timing-funtion: ease;
 }
 
@@ -211,4 +217,15 @@ regular styles
 
 nav .reviews:hover .reviews-dropdown {
   display: flex;
+}
+
+.main-overlay-menu .menu-items li{
+transition: all 0.5s ease;
+ @apply before:w-[5px] before:h-[5px] before:mr-2 before:inline-block before:bg-gray-600 
+ before:translate-y-[-20px] hover:tracking-[3px]; 
+}
+
+.main-overlay-menu .socials li{
+transition: all 0.5s ease;
+ @apply hover:translate-y-[5px]; 
 }
