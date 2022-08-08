@@ -1,16 +1,14 @@
 import React from 'react';
-import Image from 'next/image';
-import Navbar from '../../../components/layout/Navbar';
+// import Image from 'next/image';
 import PostIntro from './components/PostIntro';
 import PostText from './components/PostText';
 import PostAuthorIntro from './components/PostAuthorIntro';
-import PageRepeatStack from '../../../components/PageRepeatStack';
 import ReviewItemArea from './components/ReviewItemArea';
+import MainNavbarLayout from '../../../components/layout/MainNavbarLayout';
 
 function PostPage() {
   return (
-    <main className="book-review-post">
-      <Navbar />
+    <MainNavbarLayout pageName="book-review">
       <div className="flex gap-12 pt-28">
         <div className="w-9/12 ml-24">
           <PostIntro />
@@ -21,8 +19,7 @@ function PostPage() {
           <ReviewItemArea />
         </div>
       </div>
-      <PageRepeatStack />
-    </main>
+    </MainNavbarLayout>
   );
 }
 

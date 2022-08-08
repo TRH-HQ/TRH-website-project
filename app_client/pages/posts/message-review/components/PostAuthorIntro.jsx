@@ -5,7 +5,7 @@ function PostAuthorIntro() {
     <section className="mt-12 border-t py-6 text-lg text-center">
       <div className="custom-text-color_secondary">
         <span className="font-bold montserrat inline custom-text-color_secondary-stay">
-          Scott Hubbard{' '}
+          Scott Hubbard
         </span>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aut recusandae magnam
         debitis sunt ullam, ex mollitia provident minima et! Vitae quisquam tenetur id nesciunt

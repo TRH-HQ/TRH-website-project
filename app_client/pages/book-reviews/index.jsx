@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from '../../components/layout/Navbar';
-import PageRepeatStack from '../../components/PageRepeatStack';
+// import Navbar from '../../components/layout/Navbar';
+// import PageRepeatStack from '../../components/PageRepeatStack';
 import CenterSectionHeader from '../../components/CenterSectionHeader';
 import BookReviewCard from '../../components/post-type-cards/BookReviewCard';
 import LoadMoreBtnSection from '../../components/LoadMoreBtnSection';
+import MainNavbarLayout from '../../components/layout/MainNavbarLayout';
 
 function BookReviewsPage() {
   return (
-    <main>
-      <Navbar />
+    <MainNavbarLayout pageName="book-reviews">
       <section className="min-h-[200px] mt-28">
         <CenterSectionHeader>Book reviews</CenterSectionHeader>
         <div className="recent-book-reviews mx-[60px] my-12 flex justify-center flex-wrap gap-x-[20px] gap-y-[40px]">
@@ -21,8 +21,7 @@ function BookReviewsPage() {
         </div>
         <LoadMoreBtnSection link="/" />
       </section>
-      <PageRepeatStack />
-    </main>
+    </MainNavbarLayout>
   );
 }
 

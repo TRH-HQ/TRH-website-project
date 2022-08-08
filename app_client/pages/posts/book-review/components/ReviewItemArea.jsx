@@ -12,7 +12,7 @@ function ReviewItemArea() {
   }
 
   return (
-    <div className="flex w-full flex-col">
+    <aside className="flex w-full flex-col">
       <div className="mx-auto w-[220px] h-[300px] relative mt-20">
         <Image src={postBanner} alt="post-banner" layout="fill" placeholder="blur" priority />
       </div>
@@ -23,7 +23,7 @@ function ReviewItemArea() {
         />
         {showPurchaseOptionsMenu && <PurchaseOptionsMenu />}
       </div>
-    </div>
+    </aside>
   );
 }
 
