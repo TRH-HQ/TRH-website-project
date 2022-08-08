@@ -10,10 +10,10 @@ function MainOverlay() {
     <section
       className={`${
         mainOverlayOn ? 'block' : 'hidden'
-      } fixed top-0 left-0 right-0 w-full min-h-screen p-[3rem] fade-in`}
+      } fixed top-0 left-0 right-0 w-full min-h-screen p-4 xl:p-[3rem] fade-in`}
       style={{ backgroundColor: 'rgba(0, 0, 0, 0.95)', zIndex: '100', color: 'white' }}
     >
-      <div className="absolute top-[3rem] right-[3rem]">
+      <div className="absolute top-4 right-4 xl:top-[3rem] xl:right-[3rem]">
         <div className="close-button cursor-pointer" onClick={hideMainOverlay}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

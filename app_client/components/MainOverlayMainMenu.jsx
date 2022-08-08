@@ -1,25 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
+import { SetMainOverlayContext } from '../contexts/MainOverlayContext';
+
 // import ReviewsDropdownMenu from './ReviewsDropdownMenu';
 
 function MainOverlayMainMenu() {
+  const { hideMainOverlay } = useContext(SetMainOverlayContext);
+
   return (
     <section className="main-overlay-menu">
-      <aside className="flex flex-col h-full w-1/3">
+      <aside className="flex flex-col h-full w- full md:w-1/3">
         <div className="menu-items">
           <ul className="flex flex-col gap-y-4 custom-text-color_white font-bold">
             <Link href="/">
-              <a>
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Home</li>
               </a>
             </Link>
-            <Link href="/">
-              <a>
+            <Link href="/articles">
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Articles</li>
               </a>
             </Link>
             <Link href="/">
-              <a>
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Series</li>
               </a>
             </Link>
@@ -53,29 +57,32 @@ function MainOverlayMainMenu() {
               </Link>
               <ReviewsDropdownMenu />
             </div> */}
-            <Link href="/">
-              <a>
+            <Link href="/podcasts">
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Podcasts</li>
               </a>
             </Link>
-            <Link href="/">
-              <a>
+            <Link href="/about-us">
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">About Us</li>
               </a>
             </Link>
-            <Link href="/">
-              <a>
+            <Link href="/permissions">
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Permissions</li>
               </a>
             </Link>
-            <Link href="/">
-              <a>
+            <Link href="/policy">
+              <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Policy</li>
               </a>
             </Link>
           </ul>
         </div>
-        <div className="flex socials bottom-[3rem] left-[3rem] absolute">
+        <div
+          className="flex socials bottom-4  left-4 md:left-[3rem]
+          md:bottom-[3rem] absolute"
+        >
           <ul className="flex gap-6">
             <Link href="/">
               <a>
