@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function ThemeSwitcher({ isHero }) {
+function ThemeSwitcher({ isHeroNav }) {
   const storedTheme = window.localStorage.getItem('prefered-theme');
 
   const checkTheme = () => {
@@ -47,8 +47,8 @@ function ThemeSwitcher({ isHero }) {
     <>
       <div className="theme-switcher flex items-center">
         <button
-          className={`dark-mode-switch cursor-pointer custom-text-color_primary ${
-            !isLight && 'hidden'
+          className={`dark-mode-switch cursor-pointer  ${!isLight && 'hidden'} ${
+            isHeroNav ? 'text-white' : 'custom-text-color_primary'
           } 
             `}
           onClick={setDarkTheme}
@@ -68,7 +68,7 @@ function ThemeSwitcher({ isHero }) {
         <button
           className={`light-mode-switch cursor-pointer custom-text-color_primary ${
             isLight && 'hidden'
-          } 
+          } ${isHeroNav && 'text-white'}
             `}
           onClick={setLightTheme}
         >

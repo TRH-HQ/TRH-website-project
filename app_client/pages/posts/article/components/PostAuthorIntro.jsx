@@ -3,7 +3,7 @@ import React from 'react';
 function PostAuthorIntro() {
   return (
     <section className="mt-12 border-t py-6 text-lg text-center">
-      <div className="custom-text-color_secondary">
+      <div className="custom-text-color_secondary p-4">
         <span className="font-bold montserrat inline custom-text-color_secondary-stay">
           Scott Hubbard{' '}
         </span>

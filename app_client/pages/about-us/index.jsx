@@ -9,7 +9,7 @@ function AboutPage() {
   return (
     <MainNavbarLayout pageName="about-page w-full">
       <AboutTop />
-      <div className="w-3/5 mx-auto">
+      <div className="w-full sm:w-4/5 lg:w-3/5 mx-auto">
         <AboutText />
       </div>
     </MainNavbarLayout>

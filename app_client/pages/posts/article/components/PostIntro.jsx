@@ -4,18 +4,22 @@ import postBanner from '../../../../assets/images/interior-1.jpg';
 
 function PostIntro() {
   return (
-    <section className="intro-post-details capitalize mx-auto">
+    <section className="intro-post-details">
       <div className="flex flex-col text-center">
         <div
           className="content-tags uppercase text-md text-center font-bold mb-6
-          after:custom-background_secondary after:w-[50px] after:h-[3px] after:block after:rounded-full after:mx-auto custom-text-color_secondary"
+          after:custom-background_3 after:w-[50px] after:h-[3px] after:block after:rounded-full after:mx-auto custom-text-color_secondary"
         >
           Faith and works
         </div>
-        <div className="title font-bold text-5xl montserrat">We Need More Holy Fools</div>
-        <span className="title-follow-up pt-4 text-2xl block">How God Awakened Me to Eternity</span>
+        <div className="title font-bold text-4xl sm:text-5xl montserrat">
+          We Need More Holy Fools
+        </div>
+        <span className="title-follow-up pt-4 text-xl xsm:text-2xl block capitalize">
+          How God Awakened Me to Eternity
+        </span>
       </div>
-      <div className="w-11/12 mx-auto">
+      <div>
         <div className="lead-post-banner mt-8">
           <Image
             src={postBanner}
@@ -26,7 +30,7 @@ function PostIntro() {
             placeholder="blur"
           />
         </div>
-        <div className="author-section flex mt-6 items-center">
+        <div className="author-section flex mt-6 items-center w-11/12 mx-auto">
           <div
             className="author-pic mr-3 w-[50px] h-[50px] bg-white"
             style={{ borderRadius: '100%' }}
