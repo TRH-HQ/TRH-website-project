@@ -3,20 +3,20 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className="px-4 py-8 lg:p-20 min-h-[200px] flex-col flex md:flex mt-16 custom-background_2 text-center">
-      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pr-8">
-        <div className="brand-details flex items-center justify-center">
+    <footer className="px-4 sm:px-8 py-8 xl:p-20 min-h-[200px] flex-col flex xl:flex-row mt-16 custom-background_2 text-center">
+      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pr-8 xl:text-left">
+        <div className="brand-details flex items-center justify-center xl:justify-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
+            // width="40"
+            // height="40"
             fill="currentColor"
-            className="bi bi-house-door"
+            className="bi bi-house-door h-[30px] w-[30px] xl:w-[40px] xl:h-[40px]"
             viewBox="0 0 16 16"
           >
             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
           </svg>
-          <div className="ml-1 text-4xl font-bold montserrat custom-text_primary">
+          <div className="ml-1 text-3xl md:text-4xl font-bold montserrat custom-text_primary">
             trh<span className="custom-text_secondary">.hq</span>{' '}
           </div>
         </div>
@@ -30,7 +30,7 @@ function Footer() {
           </Link>
         </div>
         <div className="socials mt-6 md:mt-4">
-          <ul className="flex gap-6 justify-center">
+          <ul className="flex gap-6 justify-center xl:justify-start">
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pl-12 mt-6 md:mt-12">
+      <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pl-12 mt-6 md:mt-12 xl:mt-0 xl:text-right">
         <div className="section-intro poppins text-xl">Join Our Newsletter</div>
         <form className="form-area w-full flex mt-2">
           <input
@@ -96,7 +96,7 @@ function Footer() {
           </button>
         </form>
         <div className="footer-links mt-12">
-          <ul className="uppercase montserrat flex flex-wrap justify-center gap-6 text-sm">
+          <ul className="uppercase montserrat flex flex-wrap justify-center xl:justify-end gap-6 text-sm">
             <Link href="policy-page">
               <a>
                 <li>Privacy policy</li>
