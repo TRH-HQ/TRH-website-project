@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 function MainOverlayContactsMenu() {
   return (
-    <section className="contacts flex w-full flex-col min-h-screen justify-center">
-      <div className="socials flex w-1/2 mx-auto justify-center items-center">
-        <ul className="flex gap-8">
+    <section className="overlay-contacts-menu flex w-full flex-col min-h-screen justify-center">
+      <div className="socials flex w-full xl:w-1/2 xl:mx-auto justify-center items-center">
+        <ul className="flex gap-[20px] xl:gap-8">
           <Link href="/">
             <a>
               <li className="w-[40px] h-[40px] rounded-full border p-[10px]">
@@ -72,7 +72,9 @@ function MainOverlayContactsMenu() {
           </Link>
         </ul>
       </div>
-      <div className="email text-4xl text-center mt-12 tracking-[2px]">hello.trhhq@gmail.com</div>
+      <div className="email text-2xl xl:text-4xl text-center mt-12 tracking-[2px]">
+        hello.trhhq@gmail.com
+      </div>
     </section>
   );
 }
