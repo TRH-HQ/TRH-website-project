@@ -23,8 +23,8 @@ function Hero() {
       >
         <HeroNavbar />
         <div
-          className="lead-article-details w-full md:w-3/4 mx-auto text-center text-white 
-        p-6 sm:px-8 pt-40"
+          className="lead-article-details w-full md:w-3/4 mx-auto sm:text-center text-white 
+        px-[12px] sm:px-8 pt-60 sm:pt-40"
         >
           <div className="title font-bold text-4xl sm:text-5xl montserrat">
             We Need More Holy Fools
@@ -32,7 +32,7 @@ function Hero() {
           <span className="title-follow-up pt-4 text-xl ext-2xl block">
             How God Awakened Me to Eternity
           </span>
-          <div className="author-section flex justify-center mt-4 items-center">
+          <div className="author-section flex justify-start sm:justify-center mt-4 items-center">
             <div
               className="author-pic mr-3 w-[50px] h-[50px] bg-white"
               style={{ borderRadius: '100%' }}
@@ -46,8 +46,9 @@ function Hero() {
               /> */}
             </div>
             <div className="text-left flex flex-col">
-              <div className="font-bold montserrat mb-1">
-                <span className="text-gray-400">Article by</span> <span>Scott Hubbard</span>
+              <div className="font-bold montserrat mb-1 text-sm">
+                <span className="text-gray-400">Article by </span>
+                <span>Scott Hubbard</span>
               </div>
               <div className="text-sm">22/July/2022</div>
             </div>

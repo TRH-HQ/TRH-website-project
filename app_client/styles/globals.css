@@ -173,7 +173,7 @@ regular styles
 .about-page .about-text h1,
 .permissions-page .permissions-text h1,
 .policy-page .policy-text h1 {
-  @apply mt-3 sm:mt-8 text-2xl font-bold montserrat text-gray-800 dark:text-gray-100;
+  @apply mt-3 sm:mt-8 sm:text-3xl text-2xl font-bold montserrat text-gray-800 dark:text-gray-100;
 }
 
 .about-page .about-text h1,

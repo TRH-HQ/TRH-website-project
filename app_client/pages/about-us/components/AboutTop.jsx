@@ -12,7 +12,7 @@ function AboutTop() {
         </div>
       </div>
       <div className="mx-auto w-full md:w-4/5 lg:w-3/5 px-[10px]">
-        <div className="page-header text-center text-4xl sm:text-5xl mt-12 font-bold montserrat mb-[-16px]">
+        <div className="page-header text-center text-4xl sm:text-5xl mt-12 font-bold montserrat mb-[16px]">
           <span>About The Reformer's House</span>
         </div>
       </div>
