@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className="px-4 sm:px-8 py-8 xl:p-20 min-h-[200px] flex-col flex xl:flex-row mt-16 custom-background_2 text-center">
+    <footer className="px-4 sm:px-8 py-8 xl:p-20 min-h-[200px] flex-col flex xl:flex-row mt-12 custom-background_2 text-center">
       <div className="flex w-full md:w-3/4 md:mx-auto flex-col xl:pr-8 xl:text-left">
         <div className="brand-details flex items-center justify-center xl:justify-start">
           <svg

@@ -48,7 +48,7 @@ function PostIntro() {
             />
           </div>
           <div className="text-left flex flex-col">
-            <div className="font-bold montserrat mb-1">
+            <div className="font-bold montserrat mb-1 text-[14px]">
               <span className="custom-text-color_secondary-stay">Article by </span>
               <span>Scott Hubbard</span>
             </div>

@@ -7,10 +7,10 @@ import PostTag from '../PostTag';
 function ArticleCard() {
   return (
     <Link href="/posts/article">
-      <a>
-        <div className="post-card w-3/12">
+      <a className="w-full lg:w-[290px] xl:w-3/12">
+        <div className="article-card">
           <div
-            className="w-[300px] custom-background_card p-4 mx-auto"
+            className="w-full custom-background_card p-4 mx-auto"
             style={{ boxShadow: '0px 0px 30px #00000038' }}
           >
             <div

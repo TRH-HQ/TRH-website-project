@@ -5,8 +5,8 @@ import PostTag from '../PostTag';
 
 function RepostCard() {
   return (
-    <div className="w-3/12">
-      <div className="w-[250px] custom-background mx-auto">
+    <div className="w-full md:w-3/12 md:mx-4">
+      <div className="w-full custom-background mx-auto">
         <div className="post-image-wrapper w-full relative">
           <PostTag>Article</PostTag>
           <Image alt="post-image" src={DemoPic} layout="responsive" objectFit="cover" />

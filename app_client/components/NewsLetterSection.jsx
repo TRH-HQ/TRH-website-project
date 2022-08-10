@@ -36,7 +36,7 @@ function NewsLetterSection() {
               className="w-9/12 px-6 text-xl py-[10px] lg:pt-[16px] lg:pb-[12px]"
               placeholder="add email here"
             />
-            <button className="w-3/12 custom-btn-colors_fill-primary-stay custom-text_white text-xl font-bold">
+            <button className="w-3/12 custom-btn-colors_fill-primary-stay custom-text_white text-[16px] sm:text-xl font-bold">
               Submit
             </button>
           </form>
@@ -45,14 +45,14 @@ function NewsLetterSection() {
           <div className="w-full border-t lg:border-t-0 lg:border-l custom-border-color_2 py-2 lg:pl-[4rem] pr-6 flex flex-col gap-y-10">
             <div>
               <h1 className="text-xl montserrat mb-3 mt-6">Editor's Pick</h1>
-              <span className="text-3xl montserrat font-bold">
+              <span className="text-2xl sm:text-3xl montserrat font-bold">
                 Dating: The silly game we love to play
               </span>
             </div>
             <div className="flex justify-between">
               <div className="flex flex-col">
                 <h1 className="text-md montserrat">Article Written By</h1>
-                <div className="block text-2xl montserrat font-bold">Gift Omogha</div>
+                <div className="block  text-lg sm:text-2xl montserrat font-bold">Gift Omogha</div>
               </div>
               <div className="custom-support-text underline flex flex-col-reverse">
                 <Link href="/">
