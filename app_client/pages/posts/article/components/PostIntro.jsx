@@ -5,22 +5,22 @@ import postBanner from '../../../../assets/images/interior-1.jpg';
 function PostIntro() {
   return (
     <section className="intro-post-details">
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col p-[12px] sm:text-center">
         <div
-          className="content-tags uppercase text-md text-center font-bold mb-6
-          after:custom-background_3 after:w-[50px] after:h-[3px] after:block after:rounded-full after:mx-auto custom-text-color_secondary"
+          className="content-tags uppercase text-md font-bold mb-2 sm:mb-6 
+          after:custom-background_3 after:w-[50px] after:h-[3px] after:block after:rounded-full sm:after:mx-auto custom-text-color_secondary"
         >
           Faith and works
         </div>
-        <div className="title font-bold text-4xl sm:text-5xl montserrat">
+        <div className="title font-bold text-2xl sm:text-4xl lg:text-5xl montserrat">
           We Need More Holy Fools
         </div>
-        <span className="title-follow-up pt-4 text-xl xsm:text-2xl block capitalize">
+        <span className="title-follow-up sm:pt-4 text-lg xsm:text-xl lg:text-2xl block capitalize">
           How God Awakened Me to Eternity
         </span>
       </div>
       <div>
-        <div className="lead-post-banner mt-8">
+        <div className="lead-post-banner mt-2 sm:mt-8">
           <Image
             src={postBanner}
             alt="post-banner"
@@ -30,7 +30,7 @@ function PostIntro() {
             placeholder="blur"
           />
         </div>
-        <div className="author-section flex mt-6 items-center w-11/12 mx-auto">
+        <div className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] sm:w-11/12 mx-auto">
           <div
             className="author-pic mr-3 w-[50px] h-[50px] bg-white"
             style={{ borderRadius: '100%' }}

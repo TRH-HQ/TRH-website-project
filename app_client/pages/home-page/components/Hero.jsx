@@ -22,9 +22,14 @@ function Hero() {
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
       >
         <HeroNavbar />
-        <div className="lead-article-details w-3/4 mx-auto text-center text-white px-8 pt-40">
-          <div className="title font-bold text-5xl montserrat">We Need More Holy Fools</div>
-          <span className="title-follow-up pt-4 text-2xl block">
+        <div
+          className="lead-article-details w-full md:w-3/4 mx-auto text-center text-white 
+        p-6 sm:px-8 pt-40"
+        >
+          <div className="title font-bold text-4xl sm:text-5xl montserrat">
+            We Need More Holy Fools
+          </div>
+          <span className="title-follow-up pt-4 text-xl ext-2xl block">
             How God Awakened Me to Eternity
           </span>
           <div className="author-section flex justify-center mt-4 items-center">
