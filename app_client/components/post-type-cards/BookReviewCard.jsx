@@ -11,7 +11,7 @@ function BookReviewCard() {
         <div className="book-review-card">
           <div className="w-[200px] custom-background mx-auto">
             <div className="post-image-wrapper w-full relative">
-              <PostTag>Review</PostTag>
+              <PostTag>Book Review</PostTag>
               <Image alt="post-image" src={DemoPic} height={300} width={200} />
             </div>
             <div className="post-title mt-3 montserrat font-bold text-base leading-[22px] text-center">

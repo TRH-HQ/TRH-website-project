@@ -7,18 +7,25 @@ import DemoPic from '../../assets/images/shoe-3.jpg';
 function MessageReviewCard() {
   return (
     <Link href="/message-review-card">
-      <a>
-        <div className="book-review-card">
-          <div className="w-[200px] custom-background mx-auto">
-            <div className="post-image-wrapper w-full relative">
-              <PostTag>Review</PostTag>
-              <Image alt="post-image" src={DemoPic} height={300} width={200} />
-            </div>
-            <div className="post-title mt-3 montserrat font-bold text-base leading-[22px] text-center">
+      <a className="w-full px-[12px] sm:w-3/4 sm:mx-auto lg:w-3/12 lg:mx-0">
+        <div className="message-review-card w-full mx-auto flex flex-row-reverse lg:flex-col">
+          <div className="post-image-wrapper relative w-2/5 lg:w-full">
+            <PostTag>Message Review</PostTag>
+            <Image
+              src={DemoPic}
+              alt="post-image"
+              layout="responsive"
+              objectFit="cover"
+              quality={100}
+              placeholder="blur"
+            />
+          </div>
+          <div className="w-3/5 pr-[10px] lg:w-full">
+            <div className="post-title montserrat font-bold text-[13px] xsm:text-lg">
               Striving for faith in an entertainment age
             </div>
             <div className="extra-details">
-              <div className="author-section items-center text-center text-[14px]">
+              <div className="author-section items-center text-[11px] xsm:text-[12px]">
                 Reviewed by: Ant Manilla
               </div>
             </div>

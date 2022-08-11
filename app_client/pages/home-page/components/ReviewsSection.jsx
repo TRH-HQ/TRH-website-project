@@ -5,6 +5,8 @@ import CenterSectionHeader from '../../../components/CenterSectionHeader';
 import LoadMoreBtnSection from '../../../components/LoadMoreBtnSection';
 import BookReviewCard from '../../../components/post-type-cards/BookReviewCard';
 import MessageReviewCard from '../../../components/post-type-cards/MessageReviewCard';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function ReviewsSection() {
   return (
@@ -17,8 +19,7 @@ function ReviewsSection() {
           <BookReviewCard />
           <BookReviewCard />
         </div>
-        <div className="message-reviews justify-center flex flex-wrap gap-x-[80px] gap-y-[40px]">
-          <MessageReviewCard />
+        <div className="message-reviews flex w-full flex-col gap-y-[40px] lg:flex-row justify-center lg:gap-x-[40px]">
           <MessageReviewCard />
           <MessageReviewCard />
           <MessageReviewCard />
