@@ -30,7 +30,7 @@ function PostIntro() {
             placeholder="blur"
           />
         </div>
-        <div className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] sm:w-11/12 mx-auto">
+        <div className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] xsm:px-0 sm:w-11/12 mx-auto">
           <div
             className="author-pic mr-3 w-[50px] h-[50px] bg-white"
             style={{ borderRadius: '100%' }}

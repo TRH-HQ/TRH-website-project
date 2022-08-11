@@ -20,7 +20,7 @@ function Footer() {
             trh<span className="custom-text_secondary">.hq</span>{' '}
           </div>
         </div>
-        <div className="about-brief mt-8 text-lg">
+        <div className="about-brief mt-4 xsm:mt-8 text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, reiciendis cum! Nesciunt
           minima amet quisquam......{' '}
           <Link href="/about-us">

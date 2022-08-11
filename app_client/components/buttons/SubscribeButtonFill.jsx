@@ -8,7 +8,7 @@ function SubscribeButtonFill({ toggleFunction, showSubscribeMenu }) {
         className="flex gap-4 py-3 px-2 justify-center items-center uppercase"
         onClick={toggleFunction}
       >
-        <span>subscribe | listen</span>
+        <span>subscribe</span>
         {showSubscribeMenu ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

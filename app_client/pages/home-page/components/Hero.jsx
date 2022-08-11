@@ -6,8 +6,8 @@ import HeroNavbar from './HeroNav';
 
 function Hero() {
   return (
-    <section className="hero-section h-[620px] w-full relative">
-      <div className="lead-post-banner absolute left-0 right-0 top-0 z-10 w-full h-[620px]">
+    <section className="hero-section h-screen xsm:h-[620px] w-full relative">
+      <div className="lead-post-banner absolute left-0 right-0 top-0 z-10 w-full h-screen xsm:h-[620px]">
         <Image
           src={leadPostBanner}
           alt="post-author-pic"
@@ -18,13 +18,13 @@ function Hero() {
         />
       </div>
       <div
-        className="overlay-parent relative z-20 w-full h-[620px] pt-3 shadow-3xl"
+        className="overlay-parent z-20 w-full h-screen xsm:h-[620px] pt-3 shadow-3xl relative"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
       >
         <HeroNavbar />
         <div
           className="lead-article-details w-full md:w-3/4 mx-auto sm:text-center text-white 
-        px-[12px] sm:px-8 pt-60 sm:pt-40"
+        px-[12px] sm:px-8 pt-[calc(100vh_-_350px)] xsm:pt-60 sm:pt-40"
         >
           <div className="title font-bold text-4xl sm:text-5xl montserrat">
             We Need More Holy Fools

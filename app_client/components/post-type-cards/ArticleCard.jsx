@@ -42,9 +42,9 @@ function ArticleCard() {
                     style={{ borderRadius: '100%' }}
                   />
                 </div>
-                <div className="text-left flex flex-col">
-                  <div className="montserrat mb-1">
-                    <span className="text-sm">Scott Hubbard</span>
+                <div className="text-left flex flex-col py-[5px]">
+                  <div className="montserrat">
+                    <span className="text-sm font-bold">Scott Hubbard</span>
                   </div>
                   <div className="text-sm custom-text_support">22/July/2022</div>
                 </div>

@@ -13,8 +13,8 @@ function PodcastCard() {
   }
 
   return (
-    <div className="box-content mb-6">
-      <div className="w-[250px] custom-background mx-auto">
+    <div className="box-content mb-4">
+      <div className="w-full lg:w-[250px] xl:w-[300px] custom-background mx-auto">
         <div className="post-image-wrapper w-full relative">
           <PostTag>Podcasts</PostTag>
           <Image alt="post-image" src={DemoPic} layout="responsive" objectFit="cover" />

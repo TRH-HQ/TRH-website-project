@@ -4,7 +4,7 @@ import Link from 'next/link';
 function PodcastSubscriptionMenu() {
   return (
     <div className="podcast-subscription-menu w-full fade-in relative z-20">
-      <ul className="flex flex-col absolute top-0 left-0 right-0 custom-background_secondary">
+      <ul className="flex flex-col absolute top-0 left-0 right-0 custom-background_3">
         <Link href="/">
           <a>
             <li className="flex w-3/4 mx-auto justify-center gap-x-2 py-4">

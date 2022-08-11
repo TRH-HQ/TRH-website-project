@@ -6,7 +6,7 @@ import RepostCard from './post-type-cards/RepostCard';
 function ReviewsSection() {
   return (
     <section className="min-h-[200px] mt-12 lg:mt-20 lg:mb-14">
-      <div className="recent-reviews mx-[12px] xsm:w-4/5 xsm:mx-auto md:flex-row md:w-full my-12 flex flex-col justify-center flex-wrap gap-x-[20px] xl:gap-x-[40px]">
+      <div className="recent-reviews mx-[12px] xsm:w-4/5 xsm:mx-auto md:flex-row md:w-full my-16 flex flex-col justify-center flex-wrap gap-x-[20px] xl:gap-x-[40px] gap-y-[40px]">
         <RepostCard />
         <RepostCard />
         <RepostCard />

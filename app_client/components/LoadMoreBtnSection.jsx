@@ -4,7 +4,7 @@ import CustomButtonNoFill from './buttons/CustomButtonNoFill';
 
 function LoadMoreBtnSection({ link }) {
   return (
-    <div className="w-[300px] mx-auto custom-text-color_primary">
+    <div className="w-full px-[12px] xsm:px-0 xsm:w-[300px] mx-auto custom-text-color_primary">
       <Link href={`${link}`}>
         <a>
           <CustomButtonNoFill>
