@@ -162,8 +162,8 @@ regular styles
 .book-review .post-text p,
 .message-review .post-text p,
 .about-page .about-text p,
-.permissions-page .permissions-text p,
-.policy-page .policy-text p {
+.permissions .permissions-text p,
+.policy .policy-text p {
   @apply leading-[32px] sm:mt-4;
 }
 
@@ -171,16 +171,16 @@ regular styles
 .book-review .post-text h1,
 .message-review .post-text h1,
 .about-page .about-text h1,
-.permissions-page .permissions-text h1,
-.policy-page .policy-text h1 {
+.permissions .permissions-text h1,
+.policy .policy-text h1 {
   @apply mt-3 sm:mt-8 sm:text-3xl text-2xl font-bold montserrat text-gray-800 dark:text-gray-100;
 }
 
-.about-page .about-text h1,
-.permissions-page .permissions-text h1,
-.policy-page .policy-text h1 {
+/* .about-page .about-text h1,
+.permissions .permissions-text h1,
+.policy .policy-text h1 {
   @apply text-center;
-}
+} */
 
 .main-navbar ul .nav-link,
 .hero-nav ul .nav-link {

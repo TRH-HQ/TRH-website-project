@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import CustomButtonNoFill from './buttons/CustomButtonNoFill';
 
-function LoadMoreBtnSection({ link }) {
+function LoadMoreBtnSection({ link, children }) {
   return (
     <div className="w-full px-[12px] xsm:px-0 xsm:w-[300px] mx-auto custom-text-color_primary">
       <Link href={`${link}`}>

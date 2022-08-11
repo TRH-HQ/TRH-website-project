@@ -18,10 +18,10 @@ function HomePage() {
       <main className="home-page min-h-[200px]">
         <Hero />
         <RecentPostsSection />
+        <SeriesSection />
         <ReviewsSection />
         <NewsLetterSection />
         <PodcastsSection />
-        <SeriesSection />
         <Footer />
       </main>
     </>

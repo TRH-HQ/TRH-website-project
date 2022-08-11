@@ -6,13 +6,14 @@ import SeriesCard from './SeriesCard';
 
 function SeriesSection() {
   return (
-    <section className="min-h-[200px] pt-12 pb-8 hidden">
-      <CenterSectionHeader>Featured series</CenterSectionHeader>{' '}
-      <div className="series mx-[60px] my-12 flex justify-center flex-wrap gap-y-[40px]">
-        <SeriesCard />
-        <SeriesCard />
-        <SeriesCard />
-        <SeriesCard />
+    <section className="min-h-[200px] mt-12 sm:mt-20">
+      <CenterSectionHeader>Featured Series</CenterSectionHeader>
+      <div className="featured-series mt-12 mb-6 md:my-12 flex flex-col justify-center gap-y-[40px]">
+        <div className="message-reviews flex w-full flex-col lg:flex-row justify-center lg:gap-x-[40px]">
+          <SeriesCard />
+          <SeriesCard />
+          <SeriesCard />
+        </div>
       </div>
       <LoadMoreBtnSection link="/" />
     </section>

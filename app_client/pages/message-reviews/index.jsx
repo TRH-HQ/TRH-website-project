@@ -9,9 +9,9 @@ import MainNavbarLayout from '../../components/layout/MainNavbarLayout';
 function MessageReviewsPage() {
   return (
     <MainNavbarLayout pageName="message-reviews">
-      <section className="min-h-[200px] mt-28">
+      <section className="min-h-[200px] pt-16 sm:pt-20">
         <CenterSectionHeader>Message reviews</CenterSectionHeader>
-        <div className="recent-message-reviews mx-[60px] my-12 flex justify-center flex-wrap gap-x-[20px] gap-y-[40px]">
+        <div className="recent-message-reviews flex px-[7px] flex-col my-8 xsm:w-4/5 xsm:mx-auto lg:w-full lg:px-10 xl:justify-center lg:flex-row justify-center flex-wrap lg:gap-x-[30px] xl:gap-x-[60px]">
           <MessageReviewCard />
           <MessageReviewCard />
           <MessageReviewCard />

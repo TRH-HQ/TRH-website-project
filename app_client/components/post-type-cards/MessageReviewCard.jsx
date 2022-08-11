@@ -7,7 +7,7 @@ import DemoPic from '../../assets/images/shoe-3.jpg';
 function MessageReviewCard() {
   return (
     <Link href="/message-review-card">
-      <a className="w-full px-[12px] sm:w-3/4 sm:mx-auto lg:w-3/12 lg:mx-0">
+      <a className="w-full px-[12px] sm:w-3/4 sm:mx-auto lg:w-3/12 lg:mx-0 border-t lg:py-0 lg:border-t-0 py-[12px]">
         <div className="message-review-card w-full mx-auto flex flex-row-reverse lg:flex-col">
           <div className="post-image-wrapper relative w-2/5 lg:w-full">
             <PostTag>Message Review</PostTag>

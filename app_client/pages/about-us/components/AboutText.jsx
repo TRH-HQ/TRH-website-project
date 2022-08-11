@@ -2,8 +2,10 @@ import React from 'react';
 
 function AboutText() {
   return (
-    <section className="about-text w-11/12 m-serif mx-auto custom-text-color_secondary text-lg">
-      <h1 style={{ margin: '0 0 7px' }}>How it all started</h1>
+    <section className="about-text w-11/12 m-serif mx-auto custom-text-color_secondary text-[16px] sm:text-[18px]">
+      <h1 style={{ margin: '0 0 7px' }} className="text-center">
+        How it all started
+      </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa beatae. Sint
         quidem maiores numquam, accusamus nam nostrum provident eius enim distinctio ex, accusantium
