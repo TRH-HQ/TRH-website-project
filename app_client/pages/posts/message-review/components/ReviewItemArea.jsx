@@ -13,7 +13,7 @@ function ReviewItemArea() {
   }
 
   return (
-    <div className="flex w-full flex-col mb-6 mt-12">
+    <div className="flex w-full flex-col mb-6 mt-12 px-[12px] xsm:w-[350px] xsm:mx-auto xl:w-[250px] xl:px-0 xl:ml-auto xl:mr-[100px]">
       <div className="mx-auto w-full">
         <Image src={postBanner} alt="post-banner" layout="responsive" placeholder="blur" priority />
       </div>

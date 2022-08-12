@@ -20,7 +20,7 @@ function PostPage() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-8/12 lg:ml-12 xl:ml-[100px]">
+      <div className="w-full sm:w-4/5 mx-auto lg:w-8/12 lg:ml-12 xl:ml-[100px]">
         <PostAuthorIntro />
       </div>
     </MainNavbarLayout>

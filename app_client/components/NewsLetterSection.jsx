@@ -5,7 +5,7 @@ import bgPic from '../assets/images/light-house.jpg';
 
 function NewsLetterSection() {
   return (
-    <section className="newsletter-section min-h-[400px] w-full relative mt-12 md:mt-24 bg-gray-500">
+    <section className="newsletter-section min-h-[400px] w-full relative mt-12 md:mt-16 bg-gray-500">
       <div className="hidden lg:inline-block absolute bg-pic-wrapper left-0 right-0 top-0 z-10 w-full min-h-[400px]">
         <Image
           src={bgPic}

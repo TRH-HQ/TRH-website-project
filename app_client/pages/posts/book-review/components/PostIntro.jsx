@@ -20,7 +20,7 @@ function PostIntro() {
           className="title-follow-up sm:pt-4 text-lg xsm:text-xl lg:text-2xl block 
         capitalize"
         >
-          How God Awakened Me to Eternity
+          Book title: "The believer's watch word" | Joshua Selman
         </span>
       </div>
       <div>
@@ -34,11 +34,11 @@ function PostIntro() {
             placeholder="blur"
           />
         </div>
-        <div className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] sm:p-0 xl:w-11/12 mx-auto">
-          <div
-            className="author-pic mr-3 w-[50px] h-[50px] bg-white"
-            style={{ borderRadius: '100%' }}
-          >
+        <div
+          className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] sm:p-0 
+        xl:w-11/12 mx-auto"
+        >
+          <div className="author-pic mr-3 w-[50px] h-[50px]">
             <Image
               src={postBanner}
               layout="responsive"
