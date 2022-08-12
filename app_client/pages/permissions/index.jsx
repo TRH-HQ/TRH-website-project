@@ -7,7 +7,7 @@ import PermissionsText from './components/PermissionsText';
 function PermissionsPage() {
   return (
     <MainNavbarLayout pageName="permissions">
-      <div className="permissions page-header text-4xl sm:text-5xl pt-[100px] montserrat text-center font-bold">
+      <div className="permissions page-header text-4xl sm:text-5xl pt-[70px] lg:pt-[100px] montserrat text-center font-bold">
         Permissions
       </div>
       <section className="w-full sm:4/5 lg:w-3/5 mx-auto">

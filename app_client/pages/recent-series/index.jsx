@@ -9,15 +9,17 @@ function SeriesPage() {
   return (
     <main>
       <Navbar />
-      <section className="min-h-[200px] mt-28">
-        <CenterSectionHeader>Recent Series</CenterSectionHeader>
-        <div className="recent-series mx-[60px] my-12 flex justify-center flex-wrap gap-x-[20px] gap-y-[40px]">
-          <SeriesCard />
-          <SeriesCard />
-          <SeriesCard />
-          <SeriesCard />
-          <SeriesCard />
-          <SeriesCard />
+      <section className="min-h-[200px] pt-[100px]">
+        <CenterSectionHeader>Featured Series</CenterSectionHeader>
+        <div className="series-page mb-6 mt-12">
+          <div className="series-cards-wrapper flex-wrap flex w-full flex-col lg:flex-row justify-center lg:gap-x-[50px] lg:gap-y-[40px] xl:px-[50px]">
+            <SeriesCard />
+            <SeriesCard />
+            <SeriesCard />
+            <SeriesCard />
+            <SeriesCard />
+            <SeriesCard />
+          </div>
         </div>
         <LoadMoreBtnSection link="/" />
       </section>
