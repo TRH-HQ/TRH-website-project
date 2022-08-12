@@ -2,7 +2,7 @@ import React from 'react';
 
 function PolicyText() {
   return (
-    <section className="policy-text w-11/12 m-serif mx-auto custom-text-color_secondary text-lg">
+    <section className="policy-text w-11/12 m-serif mx-auto custom-text-color_secondary text-[16px] sm:text-[18px]">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, culpa beatae. Sint
         quidem maiores numquam, accusamus nam nostrum provident eius enim distinctio ex, accusantium

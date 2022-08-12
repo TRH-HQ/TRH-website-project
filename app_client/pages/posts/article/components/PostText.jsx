@@ -3,7 +3,7 @@ import React from 'react';
 function PostText() {
   return (
     <section
-      className="post-text w-full px-[12px] sm:p-0 xl:w-11/12 m-serif mx-auto 
+      className="post-text w-full px-[12px] xsm:px-[20px] sm:p-0 xl:w-11/12 m-serif mx-auto 
     custom-text-color_secondary mt-2 sm:mt-6 sm:text-[18px] text-[16px]"
     >
       <p>

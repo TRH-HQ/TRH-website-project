@@ -4,22 +4,27 @@ import postBanner from '../../../../assets/images/interior-1.jpg';
 
 function PostIntro() {
   return (
-    <section className="intro-post-details capitalize mx-auto">
-      <div className="flex flex-col">
+    <section className="intro-post-details">
+      <div className="flex flex-col p-[12px] xsm:px-[20px] sm:text-center lg:text-left lg:px-0">
         <div
-          className="content-tags uppercase text-md font-bold mb-3
-          after:custom-background_secondary after:w-[50px] after:h-[3px] after:block after:rounded-full custom-text-color_secondary"
+          className="content-tags uppercase text-md font-bold mb-2 sm:mb-3 
+          after:custom-background_3 after:w-[50px] after:h-[3px] after:block after:rounded-full 
+          sm:after:mx-auto lg:after:mx-0 custom-text-color_secondary"
         >
           Faith and works
         </div>
-        <div className="title font-bold text-5xl montserrat">We Need More Holy Fools</div>
-        <span className="title-follow-up pt-4 text-2xl block">
-          <span className="font-bold">Book Review:</span>{' '}
-          <span className="text-xl">"Book Title" - Author Name</span>
+        <div className="title font-bold text-2xl sm:text-4xl lg:text-5xl montserrat">
+          We Need More Holy Fools
+        </div>
+        <span
+          className="title-follow-up sm:pt-4 text-lg xsm:text-xl lg:text-2xl block 
+        capitalize"
+        >
+          How God Awakened Me to Eternity
         </span>
       </div>
-      <div className="w-11/12">
-        <div className="lead-post-banner mt-8">
+      <div>
+        <div className="lead-post-banner mt-2 sm:mt-8">
           <Image
             src={postBanner}
             alt="post-banner"
@@ -29,7 +34,7 @@ function PostIntro() {
             placeholder="blur"
           />
         </div>
-        <div className="author-section flex mt-6 items-center">
+        <div className="author-section flex mt-4 sm:mt-6 items-center w-full px-[12px] sm:p-0 xl:w-11/12 mx-auto">
           <div
             className="author-pic mr-3 w-[50px] h-[50px] bg-white"
             style={{ borderRadius: '100%' }}
@@ -47,8 +52,8 @@ function PostIntro() {
             />
           </div>
           <div className="text-left flex flex-col">
-            <div className="font-bold montserrat mb-1">
-              <span className="custom-text-color_secondary-stay">Reviewed by </span>
+            <div className="font-bold montserrat mb-1 text-[14px]">
+              <span className="custom-text-color_secondary-stay">Article by </span>
               <span>Scott Hubbard</span>
             </div>
             <div className="text-sm">July 22, 2022</div>
