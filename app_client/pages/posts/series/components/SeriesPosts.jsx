@@ -2,14 +2,12 @@ import React from 'react';
 
 function SeriesPosts() {
   return (
-    <div className="recent-message-reviews-section">
-      <div className="flex items-center justify-between">
-        <h3 className="uppercase montserrat mt-4 mb-2 section-header">
-          recent posts in this series
-        </h3>
+    <section className="recent-message-reviews-section px-[12px] xsm:px-[20px] xsm:mx-auto xl:w-[350px] xl:px-0 xl:ml-auto xl:mr-[100px]">
+      <div className="mt-[40px]">
+        <h3 className="uppercase montserrat mt-4 mb-2 section-header">recent message reviews</h3>
       </div>
       <div className="review-detail border-t">
-        <div className="post-title mt-6 mb-3 montserrat font-bold text-xl leading-[22px]">
+        <div className="post-title mt-6 mb-3 montserrat font-bold text-lg leading-[22px]">
           Striving for faith in an entertainment age
         </div>
         <div className="message-brief">
@@ -17,11 +15,11 @@ function SeriesPosts() {
           expedita, laudantium.
         </div>
         <div className="extra-details mt-2 mb-6">
-          <div className="author-section flex items-center uppercase">Ant Manilla</div>
+          <div className="author-section flex items-center uppercase text-[11px]">Ant Manilla</div>
         </div>
       </div>
       <div className="review-detail border-t">
-        <div className="post-title mt-6 mb-3 montserrat font-bold text-xl leading-[22px]">
+        <div className="post-title mt-6 mb-3 montserrat font-bold text-lg leading-[22px]">
           Striving for faith in an entertainment age
         </div>
         <div className="message-brief">
@@ -29,11 +27,11 @@ function SeriesPosts() {
           expedita, laudantium.
         </div>
         <div className="extra-details mt-2 mb-6">
-          <div className="author-section flex items-center uppercase">Ant Manilla</div>
+          <div className="author-section flex items-center uppercase text-[11px]">Ant Manilla</div>
         </div>
       </div>
       <div className="review-detail border-t">
-        <div className="post-title mt-6 mb-3 montserrat font-bold text-xl leading-[22px]">
+        <div className="post-title mt-6 mb-3 montserrat font-bold text-lg leading-[22px]">
           Striving for faith in an entertainment age
         </div>
         <div className="message-brief">
@@ -41,10 +39,10 @@ function SeriesPosts() {
           expedita, laudantium.
         </div>
         <div className="extra-details mt-2 mb-6">
-          <div className="author-section flex items-center uppercase">Ant Manilla</div>
+          <div className="author-section flex items-center uppercase text-[11px]">Ant Manilla</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

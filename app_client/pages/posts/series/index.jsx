@@ -9,15 +9,19 @@ import MainNavbarLayout from '../../../components/layout/MainNavbarLayout';
 function PostPage() {
   return (
     <MainNavbarLayout pageName="message-review">
-      <div className="flex gap-8 pt-28">
-        <div className="w-9/12 ml-24">
-          <PostIntro />
-          <PostText />
-          <PostAuthorIntro />
+      <div className="w-full sm:w-4/5 mx-auto pt-16 sm:pt-20 xl:w-full">
+        <div className="flex flex-col xl:flex-row lg:justify-between xl:ml-[100px]">
+          <div className="w-full xl:w-7/12">
+            <PostIntro />
+            <PostText />
+          </div>
+          <div className="w-full xl:w-5/12">
+            <SeriesPosts />
+          </div>
         </div>
-        <div className="w-3/12 mr-24">
-          <SeriesPosts />
-        </div>
+      </div>
+      <div className="w-full sm:w-4/5 mx-auto xl:w-7/12 xl:ml-[100px]">
+        <PostAuthorIntro />
       </div>
     </MainNavbarLayout>
   );
