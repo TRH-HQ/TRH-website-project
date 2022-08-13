@@ -2,7 +2,7 @@ import React from 'react';
 
 function MoreMessages() {
   return (
-    <div className="recent-message-reviews-section px-[12px] xsm:px-[20px] xsm:mx-auto xl:w-[250px] xl:px-0 xl:ml-auto xl:mr-[100px]">
+    <section className="recent-message-reviews-section px-[12px] xsm:px-[20px] xsm:mx-auto xl:w-[350px] xl:px-0 xl:ml-auto xl:mr-[100px]">
       <div className="mt-[40px]">
         <h3 className="uppercase montserrat mt-4 mb-2 section-header">recent message reviews</h3>
       </div>
@@ -42,7 +42,7 @@ function MoreMessages() {
           <div className="author-section flex items-center uppercase text-[11px]">Ant Manilla</div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

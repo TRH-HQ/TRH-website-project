@@ -13,11 +13,11 @@ function PostIntro() {
         >
           Faith and works
         </div>
-        <div className="title font-bold title text-2xl sm:text-4xl lg:text-5xl montserrat montserrat">
+        <div className="title font-bold title text-2xl sm:text-4xl lg:text-5xl montserrat">
           We Need More Holy Fools
         </div>
-        <div className="more-details sm:pt-4 text-base flex flex-col gap-x-12">
-          <div>
+        <div className="more-details sm:pt-4 flex flex-col gap-x-12">
+          <div className="text-base xsm:text-xl lg:text-2xl;">
             <span className="font-bold">Message Review:</span>
             <span> Three most important things - </span>
             <span className="underline">Joshua Selman </span>
