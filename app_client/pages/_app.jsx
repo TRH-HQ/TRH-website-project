@@ -5,6 +5,11 @@ import MainOverlay from '../components/MainOverlay';
 import '../styles/globals.css';
 import MainOverlayContext from '../contexts/MainOverlayContext';
 
+// React Slick CSS
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 function MyApp({ Component, pageProps }) {
   if (Component.getLayout) {
     return Component.getLayout(<Component {...pageProps} />);

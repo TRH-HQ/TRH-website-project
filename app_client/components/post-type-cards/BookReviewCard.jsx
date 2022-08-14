@@ -8,7 +8,7 @@ function BookReviewCard() {
   return (
     <Link href="/book-review-post">
       <a>
-        <div className="book-review-card">
+        <div className="book-review-card mb-8">
           <div className="w-[200px] custom-background mx-auto">
             <div className="post-image-wrapper w-full relative">
               <PostTag>Book Review</PostTag>
