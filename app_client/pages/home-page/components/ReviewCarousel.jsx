@@ -6,7 +6,7 @@ export default class Responsive extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 900,
       autoplay: true,
 
