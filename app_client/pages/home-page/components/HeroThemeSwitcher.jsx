@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function ThemeSwitcher({ scrollHeightReached }) {
+function HeroThemeSwitcher({ scrollHeightReached }) {
   const storedTheme = window.localStorage.getItem('prefered-theme');
 
   const checkTheme = () => {
@@ -125,4 +125,4 @@ function ThemeSwitcher({ scrollHeightReached }) {
   );
 }
 
-export default ThemeSwitcher;
+export default HeroThemeSwitcher;
