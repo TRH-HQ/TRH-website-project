@@ -4,7 +4,7 @@ import leadPostBanner from '../../../assets/images/cake-4.jpg';
 // import leadPostAuthorPic from '../assets/images/client-1.jpg';
 import HeroNavbar from './HeroNav';
 
-function Hero() {
+function Hero({ scrollHeightReached }) {
   return (
     <section className="hero-section h-screen xsm:h-[620px] w-full relative">
       <div className="lead-post-banner absolute left-0 right-0 top-0 z-10 w-full h-screen xsm:h-[620px]">
@@ -21,10 +21,10 @@ function Hero() {
         className="overlay-parent z-20 w-full h-screen xsm:h-[620px] pt-3 shadow-3xl relative"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}
       >
-        <HeroNavbar />
+        <HeroNavbar scrollHeightReached={scrollHeightReached} />
         <div
-          className="lead-article-details w-full md:w-3/4 mx-auto sm:text-center text-white 
-        px-[12px] sm:px-8 pt-[calc(100vh_-_350px)] xsm:pt-60 sm:pt-40"
+          className={`lead-article-details w-full md:w-3/4 mx-auto sm:text-center text-white 
+        px-[12px] sm:px-8 pt-[calc(100vh_-_350px)] xsm:pt-60 sm:pt-40`}
         >
           <div className="title font-bold text-4xl sm:text-5xl montserrat">
             We Need More Holy Fools

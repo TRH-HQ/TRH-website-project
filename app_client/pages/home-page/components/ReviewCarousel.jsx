@@ -9,7 +9,6 @@ export default class Responsive extends Component {
       infinite: true,
       speed: 900,
       autoplay: true,
-
       slidesToShow: 4,
       slidesToScroll: 1,
       initialSlide: 0,

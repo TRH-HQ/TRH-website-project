@@ -9,11 +9,9 @@ import MainNavbarLayout from '../../components/layout/MainNavbarLayout';
 function BookReviewsPage() {
   return (
     <MainNavbarLayout pageName="book-reviews">
-      <section className="min-h-[200px] mt-28">
+      <section className="min-h-[200px] pt-20 sm:pt-[100px]">
         <CenterSectionHeader>Book reviews</CenterSectionHeader>
-        <div className="recent-book-reviews mx-[60px] my-12 flex justify-center flex-wrap gap-x-[20px] gap-y-[40px]">
-          <BookReviewCard />
-          <BookReviewCard />
+        <div className="recent-book-reviews my-12 flex justify-center flex-wrap xl:gap-x-[20px] gap-y-[40px]">
           <BookReviewCard />
           <BookReviewCard />
           <BookReviewCard />

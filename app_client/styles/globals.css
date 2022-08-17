@@ -158,6 +158,23 @@ regular styles
   animation-timing-funtion: ease;
 }
 
+/*
+@keyframes slide-in-from-top {
+  from {
+    top: 65px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.fade-in {
+  animation-name: slide-in-from-top;
+  animation-duration: 0.85s;
+  animation-timing-funtion: ease;
+}
+*/
+
 .article .post-text p,
 .book-review .post-text p,
 .message-review .post-text p,
@@ -226,4 +243,10 @@ nav .reviews:hover .reviews-dropdown {
 .main-overlay-menu .socials li {
   transition: all 0.5s ease;
   @apply hover:translate-y-[5px];
+}
+
+/* hiding carousel controls */
+
+.slick-arrow {
+  display: none !important;
 }

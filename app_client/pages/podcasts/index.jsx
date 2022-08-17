@@ -10,7 +10,7 @@ import PodcastEpisodes from '../../components/PodcastEpisodes';
 function PodcastPage() {
   return (
     <MainNavbarLayout pageName="podcasts">
-      <section className="podcast-section mt-12 xsm:mt-20">
+      <section className="podcast-section pt-20 sm:pt-[100px]">
         <CenterSectionHeader>Podcasts</CenterSectionHeader>
         <div className="px-[12px] my-12 flex justify-center flex-col lg:gap-x-[60px] xsm:w-4/5 xsm:mx-auto lg:flex-row">
           <div className="mb-3 w-full">
