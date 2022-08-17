@@ -22,7 +22,7 @@ function MainOverlayMainMenu() {
                 <li className="text-3xl">Articles</li>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/recent-series">
               <a onClick={hideMainOverlay}>
                 <li className="text-3xl">Series</li>
               </a>

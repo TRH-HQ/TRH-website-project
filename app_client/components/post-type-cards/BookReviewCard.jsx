@@ -7,7 +7,7 @@ import DemoPic from '../../assets/images/shoe-3.jpg';
 function BookReviewCard() {
   return (
     <Link href="/book-review-post">
-      <a>
+      <a className="w-full sm:w-1/2 md:w-4/12 xl:w-3/12">
         <div className="book-review-card mb-8">
           <div className="w-[200px] custom-background mx-auto">
             <div className="post-image-wrapper w-full relative">

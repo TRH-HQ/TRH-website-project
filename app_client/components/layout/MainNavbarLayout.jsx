@@ -2,10 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import PageRepeatStack from '../PageRepeatStack';
 import Navbar from './Navbar';
+import MainOverlay from '../MainOverlay';
 
 function MainNavbarLayout({ children, pageName }) {
-  const isStickyNav = true;
-
   return (
     <>
       <Head>
@@ -13,7 +12,8 @@ function MainNavbarLayout({ children, pageName }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <main className={pageName}>
-        <Navbar isStickyNav={isStickyNav} />
+        <MainOverlay />
+        <Navbar />
         {children}
         <PageRepeatStack />
       </main>

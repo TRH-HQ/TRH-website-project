@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import NavLinks from './NavLinks';
@@ -8,7 +8,7 @@ const DynamicThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), {
   ssr: false
 });
 
-function Navbar(isStickyNav) {
+function Navbar() {
   const { showMainOverlay, showContactsMenu } = useContext(SetMainOverlayContext);
   const [showReviewsDropdown, setShowReviewsDropdown] = useState(false);
 
@@ -23,9 +23,8 @@ function Navbar(isStickyNav) {
 
   return (
     <nav
-      className={`${
-        isStickyNav && 'fixed top-0 left-0 right-0'
-      } main-navbar w-full py-[5px] px-2 lg:px-8 shadow-md flex custom-background_2 z-30`}
+      className={`fixed top-0 left-0 right-0 flex
+       main-navbar w-full py-2 px-2 lg:px-8 shadow-md custom-background_2 z-30`}
     >
       <aside className="left-side flex items-center mr-auto xl:mr-0">
         <button
@@ -82,14 +81,14 @@ function Navbar(isStickyNav) {
         <DynamicThemeSwitcher />
         <button
           className="ml-[12px] lg:ml-8 menu-button custom-nav-btn-colors rounded-full 
-          p-[6px] w-[30px] h-[30px] lg:w-[34px] lg:h-[34px] lg:p-[7px] border border-gray-500"
+          p-[6px] w-[30px] h-[30px] sm:w-[34px] sm:h-[34px] sm:p-[7px] border custom-nav-btn-colors"
           onClick={showContactsMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
             className="bi bi-envelope-fill custom-text-color_primary-stay w-[14px] h-[14px] 
-           pl-[2px] md:p-0 sm:w-[16px] sm:h-[16px]"
+           pl-[2px] sm:w-[16px] sm:h-[16px]"
             viewBox="0 0 16 16"
           >
             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
