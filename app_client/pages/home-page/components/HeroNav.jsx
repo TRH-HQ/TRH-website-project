@@ -6,7 +6,7 @@ import { SetMainOverlayContext } from '../../../contexts/MainOverlayContext';
 
 // import ThemeSwitcher from './ThemeSwitcher';
 
-const DynamicThemeSwitcher = dynamic(() => import('./HeroThemeSwitcher'), {
+const DynamicThemeSwitcher = dynamic(() => import('../../../components/HeroThemeSwitcher'), {
   ssr: false
 });
 
