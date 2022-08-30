@@ -1,10 +1,10 @@
 # TRH-website-project
-This website, is a website(web-app) project for The Reformer's House. 
+A NextJS web-app(organization website/blog) project for The Reformer's House. 
 
 ## Tech Stack
 
 1. Next.JS
 2. Tailwind CSS
-3. Contentful CMS
+3. Contentful CMS for backend/data management
 
-## More details subsequently
+## ...
